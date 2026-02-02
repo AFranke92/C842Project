@@ -1,23 +1,45 @@
 # Inventory Management System (JavaFX)
 Overview
 
-This project is a desktop inventory management application built using Java and JavaFX. The application allows users to manage parts and products for a small manufacturing organization, supporting full CRUD functionality with real-time UI updates.
+This project is a JavaFX-based inventory management application designed to manage parts and products for a small manufacturing or service organization.
 
-The system replaces a spreadsheet-based workflow with a structured, object-oriented solution designed around maintainability, usability, and clear separation of concerns.
+The application replaces spreadsheet-based inventory tracking with a structured desktop solution that supports searching, adding, modifying, and deleting inventory items through a graphical user interface.
 
 Features:
 
-Add, modify, delete, and search Parts and Products
+Add, modify, and delete parts and products
 
 Associate parts with products
 
-Real-time table updates using ObservableList
+Search inventory by ID or name
 
-Input validation and error handling
+Centralized inventory state management
 
-Clean JavaFX UI built from FXML layouts
+Input validation to prevent invalid data entry
 
-MVC-inspired architecture separating UI, business logic, and data models
+JavaFX-based GUI built with FXML
+
+Application Design:
+
+The application follows a clear separation of concerns:
+
+Model Layer
+
+Represents parts, products, and inventory data
+
+Manages relationships between parts and products
+
+Controller Layer
+
+Handles user interactions and screen navigation
+
+Enforces business logic and validation
+
+View Layer
+
+JavaFX UI built using FXML layouts
+
+The Inventory class acts as a centralized manager for all parts and products, providing lookup, update, and deletion functionality.
 
 Technologies Used:
 
@@ -29,39 +51,13 @@ FXML
 
 Object-Oriented Programming (OOP)
 
-Model–View–Controller (MVC) principles
+How to Run:
 
-Application Architecture:
+Build and run the application
 
-The application is structured using a clear separation of responsibilities:
+Use the main screen to manage parts and products
 
-Model:
-
-Part, Product, and Inventory classes manage application data and business logic
-
-Uses ObservableList to keep the UI synchronized with data changes
-
-View:
-
-JavaFX FXML files define the user interface layouts
-
-Tables and forms dynamically reflect data updates
-
-Controller:
-
-Handles user interactions, validation, and navigation between screens
-
-Connects the UI to the underlying inventory model
-
-Key Implementation Details:
-
-Inventory data is stored in memory using observable collections
-
-Search functionality supports both ID-based and name-based queries
-
-Products maintain associated parts, enforcing business rules before deletion
-
-Designed for clarity and extensibility rather than persistence or networking
+Add, modify, or remove inventory items as needed
 
 Screens
 
@@ -69,15 +65,15 @@ Screens
 
 Purpose:
 
-This project was developed to demonstrate proficiency in:
+This project demonstrates:
 
-Java and JavaFX application development
+Desktop application development with JavaFX
 
-Object-oriented design
+Object-oriented design principles
 
-UI-driven data modeling
+Inventory modeling and state management
 
-Implementing business requirements into functional software
+Practical business application logic
 
 Future Improvements:
 
